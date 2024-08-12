@@ -2,9 +2,7 @@
 import { IsString, IsNumber, IsOptional, IsArray, ArrayNotEmpty, IsNotEmpty } from 'class-validator';
 
 export class CreateCoffeeDto {
-  @IsNumber()
-  readonly id: number;  
-  
+
   @IsNotEmpty()
   @IsString() 
   readonly name: string;
