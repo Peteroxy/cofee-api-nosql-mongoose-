@@ -64,7 +64,7 @@ export class CoffeesService {
 
     try {
       coffee.recommendations++;
-      
+
       const recommendEvent = new this.eventModel({
         name: 'recommend_coffee',
         type: 'coffee',
